@@ -90,6 +90,77 @@ button{touch-action:manipulation}
 @media(max-height:700px){.invite-inner{padding-top:28px;padding-bottom:35px}.ornament{margin:17px auto}.date-block{margin-bottom:20px}.event-grid{margin-bottom:17px}.dress-code{margin:18px auto}}
 @media(max-width:430px){.cover{padding-left:22px;padding-right:22px}.cover-names{font-size:clamp(58px,15vw,76px)}.invite-inner{padding-left:23px;padding-right:23px}.event-grid{gap:8px}.event{padding:15px 8px 13px}.rsvp-btn{width:100%}.form-card{padding:29px 23px 24px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* Acabamento editorial: uma moldura em arco e detalhes botânicos delicados. */
+.scene{isolation:isolate;background:radial-gradient(ellipse at 50% 46%,#fffefa 0%,#f8f5ef 58%,#e8ded3 100%)}
+.scene:before{width:min(92vw,980px);height:min(92vw,980px);left:50%;top:50%;transform:translate(-50%,-50%);border-color:rgba(152,124,100,.09);animation:haloDrift 18s ease-in-out infinite alternate}
+.scene:after{width:min(72vw,760px);height:min(72vw,760px);right:auto;left:50%;bottom:auto;top:50%;transform:translate(-50%,-48%);border-color:rgba(152,124,100,.07)}
+.cover{background:radial-gradient(ellipse at 50% 43%,rgba(255,255,252,.96) 0%,rgba(250,247,241,.96) 48%,rgba(235,224,212,.9) 100%)}
+.cover:before,.cover:after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-53%);width:min(74vw,590px);height:min(74vw,590px);border:1px solid rgba(152,124,100,.2);border-radius:50% 50% 3px 3px/47% 47% 3px 3px;pointer-events:none}
+.cover:after{width:min(68vw,548px);height:min(68vw,548px);border-color:rgba(152,124,100,.09);transform:translate(-50%,-52%);animation:haloDrift 13s ease-in-out infinite alternate}
+.cover-frame{inset:20px;border-color:rgba(152,124,100,.24)}
+.cover-frame:before,.cover-frame:after{background:var(--ivory);color:#9b8068}
+.cover-content{max-width:640px}
+.cover-kicker{font-size:10px;letter-spacing:.34em}
+.cover-names{font-size:clamp(61px,11vw,104px);line-height:.88;margin:20px 0 9px;text-shadow:0 6px 28px rgba(85,69,58,.07)}
+.cover-names span{font-size:23px;margin:7px 0 9px}
+.monogram{display:grid;place-items:center;width:56px;height:56px;margin:0 auto 21px;border:1px solid rgba(152,124,100,.4);border-radius:50%;color:var(--taupe);font:italic 21px 'Cormorant Garamond',Georgia,serif;letter-spacing:.04em;position:relative}
+.monogram:before,.monogram:after{content:"";position:absolute;top:50%;width:29px;height:1px;background:linear-gradient(90deg,transparent,rgba(152,124,100,.42));right:calc(100% + 12px)}
+.monogram:after{right:auto;left:calc(100% + 12px);transform:rotate(180deg)}
+.botanical{width:126px;height:54px;margin-bottom:13px;opacity:.87;filter:drop-shadow(0 3px 5px rgba(85,69,58,.06))}
+.cover-invite{font-size:clamp(19px,3vw,24px);line-height:1.3}
+.cover-date{margin-top:20px;font-size:11px;letter-spacing:.24em}
+.open-btn{bottom:calc(31px + env(safe-area-inset-bottom));min-width:216px;border-radius:2px;box-shadow:0 12px 28px rgba(52,43,38,.14);letter-spacing:.22em}
+.open-btn:after{content:"↓";margin-left:10px;font-size:15px}
+.invitation{background:radial-gradient(ellipse at 50% 0%,#fffefa 0%,#f8f5f0 66%,#f2ebe3 100%)}
+.invite-inner{max-width:1030px;padding:clamp(35px,5vh,54px) clamp(24px,6vw,72px) calc(36px + env(safe-area-inset-bottom))}
+.invite-inner:before{inset:14px 12px;border-color:rgba(152,124,100,.19)}
+.invite-heading{max-width:750px;margin:0 auto}
+.eyebrow{font-size:10px;letter-spacing:.34em;margin-bottom:11px}
+.invite-names{font-size:clamp(48px,7vw,72px);line-height:.9;text-wrap:balance}
+.invite-names span{font-size:21px;margin:5px 0 4px}
+.invite-message{font-size:17px;max-width:500px;margin-top:13px}
+.ornament{margin:17px auto 18px}
+.details-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(24px,5vw,55px);align-items:center;max-width:790px;margin:0 auto;text-align:center}
+.details-primary,.details-secondary{min-width:0}
+.date-block{margin:0 auto 18px;padding:0 0 16px;border-bottom:1px solid rgba(217,203,187,.8)}
+.date-number{font-size:clamp(27px,4vw,35px);letter-spacing:.18em}
+.date-day{font-size:10px;letter-spacing:.28em;margin-top:3px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;max-width:420px;margin:16px auto 20px}
+.countdown-item{padding:8px 4px;background:rgba(255,253,250,.68);border:1px solid rgba(217,203,187,.7)}
+.countdown-item strong{display:block;color:var(--brown);font:500 20px 'Cormorant Garamond',Georgia,serif;line-height:1.05;font-variant-numeric:tabular-nums}
+.countdown-item span{display:block;margin-top:4px;color:var(--muted);font:9px 'Cormorant Garamond',Georgia,serif;letter-spacing:.14em;text-transform:uppercase}
+.event-grid{gap:9px;max-width:440px;margin:0 auto}
+.event{padding:13px 9px 12px;border:1px solid rgba(217,203,187,.75);background:rgba(255,253,250,.64)}
+.event-time{font-size:24px;margin-bottom:4px}
+.event-label{font-size:10px;letter-spacing:.19em}
+.details-secondary{padding:22px 18px;background:rgba(255,253,250,.63);border:1px solid rgba(217,203,187,.75);box-shadow:0 15px 44px rgba(73,55,39,.045)}
+.location{font-size:16px}
+.location strong{font-size:21px}
+.location-mark{margin-bottom:8px}
+.dress-code{margin:17px auto 18px;padding:8px 12px;font-size:10px;letter-spacing:.18em}
+.rsvp-btn{min-width:0;width:100%;padding:14px 15px;border-radius:2px;box-shadow:0 9px 21px rgba(52,43,38,.11);font-size:10px;letter-spacing:.17em}
+.rsvp-note{font-size:12px;margin-top:8px}
+.rsvp-modal{z-index:30}
+.form-card{border-radius:2px;box-shadow:0 28px 100px rgba(40,29,20,.31)}
+@keyframes haloDrift{from{opacity:.55;translate:-2px 0}to{opacity:1;translate:2px -4px}}
+@media(max-width:680px){
+ .cover-frame{inset:13px}
+ .cover:before{width:min(88vw,470px);height:min(88vw,470px)}
+ .cover:after{width:min(81vw,430px);height:min(81vw,430px)}
+ .cover-content{max-width:440px}
+ .cover-names{font-size:clamp(59px,15vw,82px)}
+ .monogram{width:49px;height:49px;font-size:19px;margin-bottom:17px}
+ .botanical{width:116px;height:49px}
+ .invite-inner{padding-top:39px;padding-bottom:30px}
+ .details-grid{grid-template-columns:1fr;gap:16px;max-width:460px}
+ .date-block{margin-bottom:15px}
+ .countdown{margin:13px auto 16px}
+ .details-secondary{padding:20px 17px}
+ .ornament{margin:15px auto}
+}
+@media(max-height:680px) and (min-width:681px){.cover-content{transform:scale(.86)}.open-btn{bottom:18px}.invite-inner{padding-top:25px;padding-bottom:25px}.invite-names{font-size:50px}.invite-message{margin-top:9px}.ornament{margin:12px auto}.details-grid{gap:22px}.countdown{margin:10px auto 13px}}
+@media(prefers-reduced-motion:reduce){.scene:before,.cover:after{animation:none}}
 </style>
 </head>
 <body>
@@ -97,6 +168,7 @@ button{touch-action:manipulation}
   <section class="cover" aria-label="Capa do convite">
     <div class="cover-frame" aria-hidden="true"></div>
     <div class="cover-content">
+      <div class="monogram" aria-label="Iniciais dos noivos">J&amp;E</div>
       <p class="cover-kicker">Um convite feito com carinho</p>
       <h1 class="cover-names">Jamylle<span>&amp;</span>Eduardo</h1>
       <svg class="botanical" viewBox="0 0 150 66" fill="none" aria-hidden="true"><path d="M75 60C61 42 48 27 19 9M75 60C89 42 102 27 131 9M75 57V7" stroke="#987c64" stroke-width="1"/><path d="M27 14C14 14 10 7 13 3C21 3 26 7 27 14ZM43 26C31 28 24 21 26 16C34 15 40 20 43 26ZM59 42C47 44 40 38 42 32C50 30 56 35 59 42ZM123 14C136 14 140 7 137 3C129 3 124 7 123 14ZM107 26C119 28 126 21 124 16C116 15 110 20 107 26ZM91 42C103 44 110 38 108 32C100 30 94 35 91 42ZM75 18C68 12 69 6 75 3C81 6 82 12 75 18ZM75 35C66 30 67 23 75 20C83 23 84 30 75 35Z" fill="#e9dfd4" stroke="#987c64" stroke-width=".8"/><circle cx="75" cy="57" r="2.6" fill="#987c64"/></svg>
@@ -114,14 +186,26 @@ button{touch-action:manipulation}
         <p class="invite-message">Com alegria, convidamos você para celebrar o nosso amor e testemunhar o início de uma nova história.</p>
       </header>
       <div class="ornament" aria-hidden="true">✦</div>
-      <div class="date-block"><p class="date-number">12 · 12 · 2026</p><p class="date-day">Sábado</p></div>
-      <div class="event-grid" aria-label="Programação">
-        <div class="event"><p class="event-time">17h</p><p class="event-label">Cerimônia</p></div>
-        <div class="event"><p class="event-time">19h</p><p class="event-label">Jantar</p></div>
+      <div class="details-grid">
+        <div class="details-primary">
+          <div class="date-block"><p class="date-number">12 · 12 · 2026</p><p class="date-day">Sábado</p></div>
+          <div class="countdown" id="countdown" role="timer" aria-label="Contagem regressiva para o casamento">
+            <div class="countdown-item"><strong id="countDays">--</strong><span>dias</span></div>
+            <div class="countdown-item"><strong id="countHours">--</strong><span>horas</span></div>
+            <div class="countdown-item"><strong id="countMinutes">--</strong><span>min</span></div>
+            <div class="countdown-item"><strong id="countSeconds">--</strong><span>seg</span></div>
+          </div>
+          <div class="event-grid" aria-label="Programação">
+            <div class="event"><p class="event-time">17h</p><p class="event-label">Cerimônia</p></div>
+            <div class="event"><p class="event-time">19h</p><p class="event-label">Jantar</p></div>
+          </div>
+        </div>
+        <div class="details-secondary">
+          <p class="location"><svg class="location-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.3" stroke="currentColor" stroke-width="1.5"/></svg><strong>Pemanet</strong><br>Rua Jerônimo Pimentel</p>
+          <div class="dress-code"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 4 5 6 2.8 10l3.4 1.6L8 9v11h8V9l1.8 2.6 3.4-1.6L19 6l-3-2-4 3-4-3Z" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round"/></svg>Traje: esporte fino</div>
+          <div class="rsvp-area"><button class="rsvp-btn" id="rsvpOpen" type="button"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-11.2 6.5L4 19l1.1-4.1A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 9c.7 2 2 3.3 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Confirmar presença</button><p class="rsvp-note">Confirme sua presença pelo WhatsApp</p></div>
+        </div>
       </div>
-      <p class="location"><svg class="location-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.3" stroke="currentColor" stroke-width="1.5"/></svg><strong>Pemanet</strong><br>Rua Jerônimo Pimentel</p>
-      <div class="dress-code"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 4 5 6 2.8 10l3.4 1.6L8 9v11h8V9l1.8 2.6 3.4-1.6L19 6l-3-2-4 3-4-3Z" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round"/></svg>Traje: esporte fino</div>
-      <div class="rsvp-area"><button class="rsvp-btn" id="rsvpOpen" type="button"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.5a7.5 7.5 0 0 1-11.2 6.5L4 19l1.1-4.1A7.5 7.5 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 9c.7 2 2 3.3 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>Confirmar presença</button><p class="rsvp-note">Confirme sua presença pelo WhatsApp</p></div>
     </div>
   </section>
 </main>
@@ -162,6 +246,15 @@ const form=document.getElementById('rsvpForm');
 const childrenFields=document.getElementById('childrenFields');
 const childrenCount=document.getElementById('childrenCount');
 const childInputs=document.getElementById('childInputs');
+const eventTime=new Date('2026-12-12T17:00:00-03:00').getTime();
+function updateCountdown(){
+  const remaining=Math.max(0,eventTime-Date.now());
+  const units={days:86400000,hours:3600000,minutes:60000,seconds:1000};
+  let rest=remaining;
+  for(const [name,size] of Object.entries(units)){const value=Math.floor(rest/size);rest%=size;document.getElementById(`count${name[0].toUpperCase()+name.slice(1)}`).textContent=String(value).padStart(2,'0');}
+  if(remaining===0)document.getElementById('countdown').setAttribute('aria-label','O grande dia chegou');
+}
+updateCountdown();setInterval(updateCountdown,1000);
 for(let n=1;n<=10;n++){const option=document.createElement('option');option.value=String(n);option.textContent=n===1?'1 filho':`${n} filhos`;childrenCount.appendChild(option)}
 function updateChildInputs(){
   const count=Number(childrenCount.value)||0;
