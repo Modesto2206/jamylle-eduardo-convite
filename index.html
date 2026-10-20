@@ -7,7 +7,7 @@
 <title>Jamylle &amp; Eduardo | Convite de casamento</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap');
-:root{--ivory:#fff;--paper:#fff;--sand:#f2ece4;--sand-deep:#e4d6c8;--taupe:#a4876d;--brown:#5a483b;--ink:#40362e;--muted:#8f7d6d;--line:#e4d8cb;--white:#fff}
+:root{--ivory:#fff;--paper:#fff;--sand:#f7f2ec;--sand-deep:#eee2d5;--taupe:#b39a82;--brown:#866f5b;--ink:#6b5e52;--muted:#a09182;--line:#eee5dc;--white:#fff}
 *{box-sizing:border-box}
 html,body{width:100%;height:100%;margin:0}
 body{overflow:hidden;background:var(--ivory);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;-webkit-font-smoothing:antialiased}
@@ -163,6 +163,11 @@ button{touch-action:manipulation}
 }
 @media(max-height:680px) and (min-width:681px){.cover-content{transform:scale(.86)}.open-btn{bottom:18px}.invite-inner{padding-top:25px;padding-bottom:25px}.invite-names{font-size:50px}.invite-message{margin-top:9px}.ornament{margin:12px auto}.details-grid{gap:22px}.countdown{margin:10px auto 13px}}
 @media(prefers-reduced-motion:reduce){.scene:before,.cover:after{animation:none}}
+/* O branco conduz a composição; o nude aparece em áreas leves e o marrom fica nos detalhes. */
+.cover-invite,.invite-message,.location,.date-number,.event-time{color:#887766}
+.open-btn,.rsvp-btn,.form-submit{background:#c6b19b;color:#4f4034;border-color:#bda58d;box-shadow:0 8px 24px rgba(152,124,100,.1)}
+.open-btn:hover,.rsvp-btn:hover,.form-submit:hover{background:#f8f4ef;color:#725d4a;border-color:#bda58d}
+.open-btn:focus-visible,.rsvp-btn:focus-visible,.form-submit:focus-visible,.form-close:focus-visible{outline:2px solid #a88c73;outline-offset:3px}
 </style>
 </head>
 <body>
