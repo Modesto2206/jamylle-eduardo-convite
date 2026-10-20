@@ -375,3 +375,14 @@ function makePetals(){for(let i=0;i<18;i++){const p=document.createElement('i');
 </script>
 </body>
 </html>
+
+/* Ramos discretos no medalhão e microtipografia com contraste confortável */
+.monogram{color:#79624f}
+.monogram:before,.monogram:after{top:50%;width:auto;height:auto;background:none;color:#ae9277;font:24px 'Cormorant Garamond',Georgia,serif;line-height:1}
+.monogram:before{content:"❧";right:calc(100% + 12px);left:auto;transform:translateY(-50%) rotate(-17deg)}
+.monogram:after{content:"❧";left:calc(100% + 12px);right:auto;transform:translateY(-50%) scaleX(-1) rotate(-17deg)}
+.cover-kicker{color:#8a7059;font-weight:500}
+.cover-date{color:#76614e}
+.cover-edition{color:#92785f;font-weight:600}
+.botanical{opacity:.96}
+@media(max-width:680px){.monogram:before{right:calc(100% + 8px)}.monogram:after{left:calc(100% + 8px)}.monogram:before,.monogram:after{font-size:21px}}
