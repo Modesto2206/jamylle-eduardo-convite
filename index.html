@@ -231,6 +231,20 @@ button{touch-action:manipulation}
 }
 @media(max-width:380px){.invite-inner{padding-left:12px;padding-right:12px}.invite-names{font-size:33px}.details-grid{gap:4px}.details-primary,.details-secondary{padding:8px 5px}.event-time{font-size:15px}.dress-code,.rsvp-btn{font-size:6px}}
 @media(max-width:430px) and (max-height:700px){.invite-inner{padding-top:14px;padding-bottom:10px}.invite-names{font-size:32px}.invite-message{font-size:11px}.ornament{margin:5px auto}.details-primary,.details-secondary{padding:7px 4px}.countdown{margin:4px auto 5px}.dress-code{margin:6px auto}}
+
+/* Refinos ornamentais da capa: traços claros, medalhão e data em algarismos romanos */
+.cover{isolation:isolate;background:radial-gradient(ellipse at 50% 44%,#fff 0%,#fff 59%,#fbf8f4 100%)}
+.cover-frame{inset:18px;border:1px solid rgba(179,154,130,.34);box-shadow:inset 0 0 0 5px rgba(255,255,255,.54),inset 0 0 0 6px rgba(195,175,153,.15);border-radius:2px}
+.cover-frame:before,.cover-frame:after{content:"✦  ❧";font-size:11px;letter-spacing:.13em;padding:0 11px;color:#a18f7d;background:#fff}
+.cover-frame:before{top:-7px}.cover-frame:after{bottom:-7px}
+.monogram{background:rgba(255,255,255,.86);box-shadow:0 0 0 6px rgba(255,255,255,.5),0 0 0 7px rgba(195,175,153,.15);outline:1px solid rgba(179,154,130,.18);outline-offset:4px}
+.cover-edition{margin:11px 0 0;color:#b39a82;font:500 10px 'Cormorant Garamond',Georgia,serif;letter-spacing:.28em;animation:riseIn 1s .62s both}
+.cover-edition span{padding:0 5px;color:#d1c0ae}
+.open-btn{box-shadow:0 10px 25px rgba(152,124,100,.1)}
+@media(max-width:680px){.cover-frame{inset:12px}.cover-edition{font-size:9px;margin-top:8px}}
+@media(max-height:700px){.cover-edition{margin-top:6px}}
+@media(prefers-reduced-motion:reduce){.cover-edition{animation:none!important}}
+
 </style>
 </head>
 <body>
