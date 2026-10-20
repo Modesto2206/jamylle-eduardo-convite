@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f7f4ef">
-<title>Remílio &amp; Eduardo | Convite de casamento</title>
+<title>Jamylle &amp; Eduardo | Convite de casamento</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap');
 :root{--ivory:#fff;--paper:#fff;--sand:#faf7f3;--sand-deep:#f1e8de;--taupe:#c3af99;--brown:#a18e7b;--ink:#817467;--muted:#b0a294;--line:#f3ece4;--white:#fff}
@@ -234,13 +234,13 @@ button{touch-action:manipulation}
 </style>
 </head>
 <body>
-<main class="scene" id="scene" aria-label="Convite de casamento de Remílio e Eduardo">
+<main class="scene" id="scene" aria-label="Convite de casamento de Jamylle e Eduardo">
   <section class="cover" aria-label="Capa do convite">
     <div class="cover-frame" aria-hidden="true"></div>
     <div class="cover-content">
-      <div class="monogram" aria-label="Iniciais dos noivos">R&amp;E</div>
+      <div class="monogram" aria-label="Iniciais dos noivos">J&amp;E</div>
       <p class="cover-kicker">Um convite feito com carinho</p>
-      <h1 class="cover-names">Remílio<span>&amp;</span>Eduardo</h1>
+      <h1 class="cover-names">Jamylle<span>&amp;</span>Eduardo</h1>
       <svg class="botanical" viewBox="0 0 150 66" fill="none" aria-hidden="true"><path d="M75 60C61 42 48 27 19 9M75 60C89 42 102 27 131 9M75 57V7" stroke="#b9a891" stroke-width="1"/><path d="M27 14C14 14 10 7 13 3C21 3 26 7 27 14ZM43 26C31 28 24 21 26 16C34 15 40 20 43 26ZM59 42C47 44 40 38 42 32C50 30 56 35 59 42ZM123 14C136 14 140 7 137 3C129 3 124 7 123 14ZM107 26C119 28 126 21 124 16C116 15 110 20 107 26ZM91 42C103 44 110 38 108 32C100 30 94 35 91 42ZM75 18C68 12 69 6 75 3C81 6 82 12 75 18ZM75 35C66 30 67 23 75 20C83 23 84 30 75 35Z" fill="#f3ece3" stroke="#b9a891" stroke-width=".8"/><circle cx="75" cy="57" r="2.6" fill="#b9a891"/></svg>
       <p class="cover-invite">convidam você para uma<br><strong>comemoração muito especial</strong></p>
       <p class="cover-date">12 de dezembro de 2026 <span aria-hidden="true">·</span> 17h</p>
@@ -252,7 +252,7 @@ button{touch-action:manipulation}
     <div class="invite-inner">
       <header class="invite-heading">
         <p class="eyebrow">Com a bênção de Deus</p>
-        <h2 class="invite-names">Remílio Gomes<span>&amp;</span>Eduardo Soares</h2>
+        <h2 class="invite-names">Jamylle Gomes<span>&amp;</span>Eduardo Soares</h2>
         <p class="invite-message">Com alegria, convidamos você para celebrar o nosso amor e testemunhar o início de uma nova história.</p>
       </header>
       <div class="ornament" aria-hidden="true">✦</div>
@@ -353,7 +353,7 @@ form.addEventListener('submit',e=>{
   const data=new FormData(form);const name=String(data.get('guestName')).trim();const answer=data.get('children');
   const childNames=answer==='Sim'?data.getAll('childName').map(v=>String(v).trim()).filter(Boolean):[];
   const childText=answer==='Sim'?`${childNames.length} filho(s): ${childNames.join(', ')}`:'Não';
-  const message=`Olá! Confirmo minha presença no casamento de Remílio Gomes e Eduardo Soares.\n\nNome: ${name}\nFilhos que irão: ${childText}\nTraje informado: esporte fino.\n\nAguardo com alegria esse momento especial!`;
+  const message=`Olá! Confirmo minha presença no casamento de Jamylle Gomes e Eduardo Soares.\n\nNome: ${name}\nFilhos que irão: ${childText}\nTraje informado: esporte fino.\n\nAguardo com alegria esse momento especial!`;
   window.location.href='https://wa.me/5591998103997?text='+encodeURIComponent(message);
 });
 function makePetals(){for(let i=0;i<18;i++){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'vw';p.style.animationDuration=(5+Math.random()*6)+'s';p.style.animationDelay=(Math.random()*1.5)+'s';p.style.setProperty('--x',(Math.random()*120-60)+'px');document.body.appendChild(p);setTimeout(()=>p.remove(),12500)}}
