@@ -168,6 +168,68 @@ button{touch-action:manipulation}
 .open-btn,.rsvp-btn,.form-submit{background:#e5d9cb;color:#756351;border-color:#d9c8b5;box-shadow:0 8px 24px rgba(152,124,100,.06)}
 .open-btn:hover,.rsvp-btn:hover,.form-submit:hover{background:#faf7f3;color:#8b7967;border-color:#d9c8b5}
 .open-btn:focus-visible,.rsvp-btn:focus-visible,.form-submit:focus-visible,.form-close:focus-visible{outline:2px solid #c3af99;outline-offset:3px}
+/* Acabamento de luxo e composição ajustada primeiro para celular. */
+.cover{background:radial-gradient(ellipse at 50% 48%,#fff 0%,#fff 64%,#fdfaf7 100%)}
+.cover-frame{border-color:rgba(195,175,153,.25)}
+.cover:before{width:min(80vw,650px);height:min(80vw,650px);border-color:rgba(195,175,153,.22)}
+.cover:after{width:min(73vw,594px);height:min(73vw,594px);border-color:rgba(195,175,153,.1)}
+.monogram{width:62px;height:62px;border-color:rgba(179,154,130,.48);background:rgba(255,255,255,.76);box-shadow:0 0 0 7px rgba(255,255,255,.45),0 0 0 8px rgba(195,175,153,.11)}
+.cover-names,.invite-names{color:#a18f7d}
+.invite-names span{color:#c3af99}
+.details-primary,.details-secondary{background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(252,249,246,.7));border:1px solid rgba(232,221,208,.68);box-shadow:0 14px 38px rgba(140,115,91,.035)}
+.countdown-item{border:0;border-right:1px solid rgba(232,221,208,.72);background:transparent}
+.countdown-item:last-child{border-right:0}
+.event{background:rgba(255,255,255,.72);border-color:#eee7de}
+.rsvp-btn,.form-submit,.open-btn{background:#e5d9cb;color:#756351;border-color:#d9c8b5}
+.rsvp-btn:hover,.form-submit:hover{background:#faf7f3;color:#8b7967;border-color:#d9c8b5;transform:translateY(-2px)}
+.rsvp-btn svg{color:#a18f7d}
+.cover-invite,.invite-message,.location,.date-number,.event-time{color:#a18f7d}
+.dress-code{background:rgba(255,255,255,.7);border-color:#efe7de}
+.date-block{border-color:#eee7de}
+@media(max-width:680px){
+ .cover{padding:24px 18px calc(88px + env(safe-area-inset-bottom))}
+ .cover-frame{inset:12px}
+ .cover:before{width:min(92vw,500px);height:min(92vw,500px)}
+ .cover:after{width:min(84vw,455px);height:min(84vw,455px)}
+ .cover-content{max-width:420px}
+ .monogram{width:51px;height:51px;margin-bottom:13px;font-size:18px}
+ .cover-names{font-size:clamp(55px,15vw,76px);margin:15px 0 5px}
+ .botanical{width:108px;height:44px;margin-bottom:8px;opacity:.72}
+ .cover-invite{font-size:18px;line-height:1.22}
+ .cover-date{font-size:9px;letter-spacing:.2em;margin-top:14px}
+ .open-btn{bottom:calc(20px + env(safe-area-inset-bottom));min-width:200px;padding:13px 18px}
+ .invite-inner{padding:20px 16px calc(14px + env(safe-area-inset-bottom))}
+ .invite-inner:before{inset:7px}
+ .eyebrow{font-size:8px;letter-spacing:.28em;margin-bottom:6px}
+ .invite-names{font-size:clamp(34px,9vw,42px);line-height:.87}
+ .invite-names span{font-size:15px;margin:2px 0}
+ .invite-message{font-size:12px;line-height:1.18;margin:7px auto 0;max-width:340px}
+ .ornament{margin:8px auto;font-size:9px}
+ .ornament:before,.ornament:after{width:32px}
+ .details-grid{grid-template-columns:1fr 1fr;gap:6px;align-items:stretch;max-width:440px}
+ .details-primary,.details-secondary{padding:10px 7px;display:flex;flex-direction:column;justify-content:center}
+ .date-block{margin:0 auto 7px;padding-bottom:7px}
+ .date-number{font-size:clamp(17px,4.8vw,21px);letter-spacing:.08em}
+ .date-day{font-size:7px;letter-spacing:.18em;margin-top:2px}
+ .countdown{gap:0;margin:6px auto 8px;width:100%}
+ .countdown-item{padding:3px 1px}
+ .countdown-item strong{font-size:13px}
+ .countdown-item span{font-size:6px;letter-spacing:.08em;margin-top:2px}
+ .event-grid{gap:4px;margin:0 auto;max-width:none;width:100%}
+ .event{padding:7px 2px 6px}
+ .event-time{font-size:17px;margin-bottom:3px}
+ .event-label{font-size:7px;letter-spacing:.1em}
+ .location{font-size:10px;line-height:1.22}
+ .location strong{font-size:15px}
+ .location-mark{width:16px;height:16px;margin-bottom:3px}
+ .dress-code{margin:9px auto;padding:5px 4px;gap:4px;font-size:6.5px;letter-spacing:.08em}
+ .dress-code svg{width:12px;height:12px}
+ .rsvp-btn{padding:9px 4px;gap:4px;font-size:6.7px;letter-spacing:.08em}
+ .rsvp-btn svg{width:13px;height:13px}
+ .rsvp-note{font-size:7.5px;line-height:1.1;margin-top:4px}
+}
+@media(max-width:380px){.invite-inner{padding-left:12px;padding-right:12px}.invite-names{font-size:33px}.details-grid{gap:4px}.details-primary,.details-secondary{padding:8px 5px}.event-time{font-size:15px}.dress-code,.rsvp-btn{font-size:6px}}
+@media(max-width:430px) and (max-height:700px){.invite-inner{padding-top:14px;padding-bottom:10px}.invite-names{font-size:32px}.invite-message{font-size:11px}.ornament{margin:5px auto}.details-primary,.details-secondary{padding:7px 4px}.countdown{margin:4px auto 5px}.dress-code{margin:6px auto}}
 </style>
 </head>
 <body>
@@ -189,7 +251,7 @@ button{touch-action:manipulation}
     <div class="invite-inner">
       <header class="invite-heading">
         <p class="eyebrow">Com a bênção de Deus</p>
-        <h2 class="invite-names">Jamylle Shyslenny Soares Gomes<span>&amp;</span>Eduardo Evangelista Soares</h2>
+        <h2 class="invite-names">Jamylle Soares Gomes<span>&amp;</span>Eduardo Soares</h2>
         <p class="invite-message">Com alegria, convidamos você para celebrar o nosso amor e testemunhar o início de uma nova história.</p>
       </header>
       <div class="ornament" aria-hidden="true">✦</div>
@@ -290,7 +352,7 @@ form.addEventListener('submit',e=>{
   const data=new FormData(form);const name=String(data.get('guestName')).trim();const answer=data.get('children');
   const childNames=answer==='Sim'?data.getAll('childName').map(v=>String(v).trim()).filter(Boolean):[];
   const childText=answer==='Sim'?`${childNames.length} filho(s): ${childNames.join(', ')}`:'Não';
-  const message=`Olá! Confirmo minha presença no casamento de Jamylle Shyslenny Soares Gomes e Eduardo Evangelista Soares.\n\nNome: ${name}\nFilhos que irão: ${childText}\nTraje informado: esporte fino.\n\nAguardo com alegria esse momento especial!`;
+  const message=`Olá! Confirmo minha presença no casamento de Jamylle Soares Gomes e Eduardo Soares.\n\nNome: ${name}\nFilhos que irão: ${childText}\nTraje informado: esporte fino.\n\nAguardo com alegria esse momento especial!`;
   window.location.href='https://wa.me/5591998103997?text='+encodeURIComponent(message);
 });
 function makePetals(){for(let i=0;i<18;i++){const p=document.createElement('i');p.className='petal';p.style.left=Math.random()*100+'vw';p.style.animationDuration=(5+Math.random()*6)+'s';p.style.animationDelay=(Math.random()*1.5)+'s';p.style.setProperty('--x',(Math.random()*120-60)+'px');document.body.appendChild(p);setTimeout(()=>p.remove(),12500)}}
