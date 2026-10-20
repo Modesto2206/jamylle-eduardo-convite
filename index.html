@@ -255,6 +255,23 @@ button{touch-action:manipulation}
 .cover-edition{color:#92785f;font-weight:600}
 .botanical{opacity:.96}
 @media(max-width:680px){.monogram:before{right:calc(100% + 8px)}.monogram:after{left:calc(100% + 8px)}.monogram:before,.monogram:after{font-size:21px}}
+
+/* A capa e os detalhes permanecem claros, com marrom apenas como acento */
+:root{--ivory:#fff;--paper:#fff;--sand:#fdfbf9;--sand-deep:#eee4d9;--taupe:#b9a68f;--brown:#aa967f;--ink:#8a7c6e;--muted:#b1a394;--line:#eee8e0;--white:#fff}
+body{background:#fff;color:#8a7c6e}
+.cover{background:radial-gradient(ellipse at 50% 44%,#fff 0%,#fff 68%,#fcfaf7 100%)}
+.cover:before,.cover:after{border-color:rgba(195,175,153,.14)}
+.cover-frame{border-color:rgba(195,175,153,.22);box-shadow:inset 0 0 0 5px rgba(255,255,255,.58),inset 0 0 0 6px rgba(195,175,153,.08)}
+.cover-names,.invite-names{color:#aa967f;text-shadow:0 3px 22px rgba(195,175,153,.06)}
+.cover-kicker,.cover-date,.cover-edition,.eyebrow{color:#ad9a84}
+.cover-invite,.invite-message,.location,.date-number,.event-time{color:#a39280}
+.event{background:rgba(255,255,255,.84);border-color:#eee8e0}
+.details-primary,.details-secondary{background:linear-gradient(145deg,#fff,#fdfbf9);border-color:#f0e9e1;box-shadow:0 12px 32px rgba(140,115,91,.025)}
+.open-btn,.rsvp-btn,.form-submit{background:#f0e8df;color:#8d7964;border-color:#e7dbce;box-shadow:0 7px 20px rgba(152,124,100,.045)}
+.open-btn:hover,.rsvp-btn:hover,.form-submit:hover{background:#fff;color:#a38e78;border-color:#e7dbce}
+.dress-code{background:rgba(255,255,255,.8);border-color:#eee7df;color:#a08d77}
+.form-card{background:#fff;border-color:#eee4d9;box-shadow:0 24px 80px rgba(93,72,54,.12)}
+
 </style>
 </head>
 <body>
