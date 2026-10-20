@@ -1,6 +1,6 @@
 # Convite de casamento — Jamylle & Eduardo
 
-Convite digital em tela cheia para o casamento de **Jamylle Shyslenny Soares Gomes** e **Eduardo Evangelista Soares**.
+Convite digital em tela cheia para o casamento de **Jamylle Soares Gomes** e **Eduardo Soares**.
 
 - Cerimônia: 12 de dezembro de 2026, às 17h
 - Jantar: às 19h
