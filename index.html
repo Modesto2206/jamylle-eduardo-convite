@@ -7,7 +7,7 @@
 <title>Jamylle &amp; Eduardo | Convite de casamento</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&display=swap');
-:root{--ivory:#f8f6f2;--paper:#fffdfa;--sand:#e9dfd4;--sand-deep:#d5c2af;--taupe:#987c64;--brown:#55453a;--ink:#342b26;--muted:#87796d;--line:#d9cbbb;--white:#fff}
+:root{--ivory:#fff;--paper:#fff;--sand:#f2ece4;--sand-deep:#e4d6c8;--taupe:#a4876d;--brown:#5a483b;--ink:#40362e;--muted:#8f7d6d;--line:#e4d8cb;--white:#fff}
 *{box-sizing:border-box}
 html,body{width:100%;height:100%;margin:0}
 body{overflow:hidden;background:var(--ivory);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;-webkit-font-smoothing:antialiased}
@@ -92,10 +92,10 @@ button{touch-action:manipulation}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
 
 /* Acabamento editorial: uma moldura em arco e detalhes botânicos delicados. */
-.scene{isolation:isolate;background:radial-gradient(ellipse at 50% 46%,#fffefa 0%,#f8f5ef 58%,#e8ded3 100%)}
+.scene{isolation:isolate;background:radial-gradient(ellipse at 50% 46%,#fff 0%,#fff 58%,#f6f2ed 100%)}
 .scene:before{width:min(92vw,980px);height:min(92vw,980px);left:50%;top:50%;transform:translate(-50%,-50%);border-color:rgba(152,124,100,.09);animation:haloDrift 18s ease-in-out infinite alternate}
 .scene:after{width:min(72vw,760px);height:min(72vw,760px);right:auto;left:50%;bottom:auto;top:50%;transform:translate(-50%,-48%);border-color:rgba(152,124,100,.07)}
-.cover{background:radial-gradient(ellipse at 50% 43%,rgba(255,255,252,.96) 0%,rgba(250,247,241,.96) 48%,rgba(235,224,212,.9) 100%)}
+.cover{background:radial-gradient(ellipse at 50% 43%,rgba(255,255,255,.98) 0%,rgba(255,255,255,.98) 48%,rgba(247,243,238,.96) 100%)}
 .cover:before,.cover:after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-53%);width:min(74vw,590px);height:min(74vw,590px);border:1px solid rgba(152,124,100,.2);border-radius:50% 50% 3px 3px/47% 47% 3px 3px;pointer-events:none}
 .cover:after{width:min(68vw,548px);height:min(68vw,548px);border-color:rgba(152,124,100,.09);transform:translate(-50%,-52%);animation:haloDrift 13s ease-in-out infinite alternate}
 .cover-frame{inset:20px;border-color:rgba(152,124,100,.24)}
@@ -112,7 +112,7 @@ button{touch-action:manipulation}
 .cover-date{margin-top:20px;font-size:11px;letter-spacing:.24em}
 .open-btn{bottom:calc(31px + env(safe-area-inset-bottom));min-width:216px;border-radius:2px;box-shadow:0 12px 28px rgba(52,43,38,.14);letter-spacing:.22em}
 .open-btn:after{content:"↓";margin-left:10px;font-size:15px}
-.invitation{background:radial-gradient(ellipse at 50% 0%,#fffefa 0%,#f8f5f0 66%,#f2ebe3 100%)}
+.invitation{background:radial-gradient(ellipse at 50% 0%,#fff 0%,#fff 66%,#f8f5f0 100%)}
 .invite-inner{max-width:1030px;padding:clamp(35px,5vh,54px) clamp(24px,6vw,72px) calc(36px + env(safe-area-inset-bottom))}
 .invite-inner:before{inset:14px 12px;border-color:rgba(152,124,100,.19)}
 .invite-heading{max-width:750px;margin:0 auto}
@@ -143,6 +143,8 @@ button{touch-action:manipulation}
 .rsvp-note{font-size:12px;margin-top:8px}
 .rsvp-modal{z-index:30}
 .form-card{border-radius:2px;box-shadow:0 28px 100px rgba(40,29,20,.31)}
+.children-fields{background:#fbf9f6}
+.dress-note{background:#f8f4ef}
 @keyframes haloDrift{from{opacity:.55;translate:-2px 0}to{opacity:1;translate:2px -4px}}
 @media(max-width:680px){
  .cover-frame{inset:13px}
